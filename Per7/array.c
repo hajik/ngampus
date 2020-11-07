@@ -2,7 +2,7 @@
 
 int displaySum(int data[5]) {
 	
-	int i, total;
+	int i, total = 0;
 	
 	for(i = 0; i < 5; ++i) {
      
@@ -11,12 +11,13 @@ int displaySum(int data[5]) {
      
  	}
      
+    printf("TOT : %d\n", total);
 	return total;
 	
 }
 
 int main(){
-    int ages[5] = {49, 48, 26, 19, 16};
+    int ages[5] = {5, 5, 5, 5, 5};
     
 	int total;
 	
