@@ -1,27 +1,26 @@
 #include <stdio.h>
 
-int displaySum(int data[5]) {
+int sum(int ages[5]) {
 	
 	int i, total = 0;
 	
 	for(i = 0; i < 5; ++i) {
      
-     printf("Values ages : %d\n", data[i]);
-     total += data[i];
+     printf("Value : %d\n", ages[i]);
+     total += ages[i];
      
  	}
      
-    printf("TOT : %d\n", total);
 	return total;
 	
 }
 
 int main(){
-    int ages[5] = {5, 5, 5, 5, 5};
+    int ages[5] = {49, 48, 26, 19, 16};
     
 	int total;
 	
-	total = displaySum(ages);
+	total = sum(ages);
     
     printf("\nTotal : %d", total);
     
